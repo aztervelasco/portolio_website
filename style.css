@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins%3Awght%40100%3B200%3B300%3B400%3B500%3B600&display=swap%27%29%3B');
+
+*{
+    padding: 0;
+    margin: 0;
+    display:block ;
+}
+.navbar{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 5px 20px;
+    position: sticky;
+    z-index: 1000;
+    margin-right: 10%;
+}
+.navbar ul li{
+    position: relative;
+    right: 25rem;
+    list-style: none; 
+    color: black; 
+    padding: 10px 20px; 
+    font-size: 20px; 
+    transition: color 0.3s, background-color 0.3s;
+    
+}
+
+.navbar ul li a{
+   color: white;    
+   text-decoration: none;
+   padding: 5px;
+
+   
+}
+.navbar ul:hover a:not(:hover){
+    opacity: .7;
+    transform: scale(.85);
+    color: white;
+    transform: 0.3s;
+
+}
+.navbar ul li a:hover{
+    transform: scale(1.1, 1.1);
+    font: bold;
+    transform: color 1s;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    gap: 25px;
+}
+
+.logo{
+    position: relative;
+    text-decoration: underline yellowgreen;
+    left: 150px;
+    margin: 0;
+    padding: 5px;
+    font-size: 35px;
+    color: aqua;
+    font-family:'Times New Roman';
+    font: bold;    
+}
+
+.background-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-size: cover;
+    z-index: -1;
+}
+
+.home-img{
+    position: relative;
+    padding: 10px;
+    margin-top: 10%;
+    margin-left: 10%;
+    border-radius: 50px;
+    object-fit: cover;
+    align-content: center;
+
+}
+.home-img img{
+    width: 300px; 
+    height: 300px;
+    border-radius: 50% 10% 50% 10%; 
+    object-fit: cover;
+    border: 5px solid aqua; 
+
+}
+.home-content{
+    position: relative;
+    color: white;
+    left: 30%;
+    bottom: 280px;
+    
+}
+.home-content h1{
+    font-size: 100px;
+    font-weight: bold;
+    color: red;
+}
+.typing-text {
+    font-size: 30px; /* Adjust size */
+    font-weight: bold;
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid white; /* Cursor effect */
+    width: 0;
+    animation: typing 4s steps(30, end) infinite, blink 0.6s step-end infinite;
+}
+
+/* Typing Effect */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+/* Cursor Blinking */
+@keyframes blink {
+    from { border-color: white; }
+    to { border-color: transparent; }
+}
+.social-icons {
+    display: flex; 
+    gap: 10px; 
+}
+.social-icons a{
+    list-style: none; 
+    background-color: transparent;
+    color: white; 
+    padding: 10px 15px; 
+    font-size: 20px;
+    border-radius: 2px; 
+    transition: color 0.3s, background-color 0.3s;
+    
+}
+.social-icons a i{
+   padding: 0;
+   border-radius: 5px;
+   display: flex;
+}
